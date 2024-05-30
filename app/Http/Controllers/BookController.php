@@ -45,7 +45,7 @@ class BookController extends Controller
         $request->validate([
             'title' => ['required']
         ]);
-       
+
         $book->title = $request->input('title');
         $book->save();
         return $book;
